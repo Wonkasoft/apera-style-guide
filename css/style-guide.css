@@ -23,6 +23,23 @@ xPatterns
   padding: 6px;
 }
 
+pre {
+  background: #333;
+  white-space: pre;
+  word-wrap: break-word;
+  color:#fff;
+  padding: 35px 15px 20px 15px;
+}
+
+pre.code {
+    font-family: "Inconsolata","Monaco","Consolas","Andale Mono","Bitstream Vera Sans Mono","Courier New",Courier,monospace;
+    margin: 20px 25px;
+    border-radius: 4px;
+    border: 1px solid #292929;
+    line-height: 19px;
+    position: relative;
+}
+
 /* -------------------------------- 
 
 xNavigation 
@@ -728,6 +745,9 @@ section:nth-of-type(5) h2::before {
 section:nth-of-type(6) h2::before {
   content: '6. ';
 }
+section:nth-of-type(7) h2::before {
+  content: '7. ';
+}
 @media only screen and (min-width: 768px) {
   section {
     margin: 3em 0 5em;
@@ -984,11 +1004,11 @@ section:nth-of-type(6) h2::before {
 
 /* background section - basic style */
 .cd-background li {
-  /*display: inline-block;*/
+  display: inline-block;
   background-position: center center;
   background-repeat: no-repeat;
   margin: 1em;
 }
 .cd-background .cd-background-1 {
-  background-image: url("../assets/icons/background-1.png");
+  background-color: #e6e6e6;
 }

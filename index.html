@@ -5,7 +5,11 @@
 	<meta name="viewport" content="width=device-width, initial-scale=1">
 
 	<link href='http://fonts.googleapis.com/css?family=Open+Sans:400,300,700|Merriweather' rel='stylesheet' type='text/css'>
-
+	<!-- Cod Box Copy begin -->
+	<link rel="dns-prefetch" href="//cdn.jsdelivr.net" />
+	<link href="https://cdn.jsdelivr.net/npm/prismjs/themes/prism.min.css" rel="stylesheet" />
+	<link href="https://cdn.jsdelivr.net/gh/jablonczay/code-box-copy/code-box-copy/css/code-box-copy.min.css" rel="stylesheet" />
+	<!-- Cod Box Copy end -->
 	<link rel="stylesheet" href="css/reset.css"> <!-- CSS reset -->
 	<link rel="stylesheet" href="css/style-guide.css"> <!-- Resource style -->
 	<script src="js/modernizr.js"></script> <!-- Modernizr -->
@@ -24,6 +28,7 @@
 				<li><a href="#buttons">Buttons</a></li>
 				<li><a href="#icons">icons</a></li>
 				<li><a href="#form">Form</a></li>
+				<li><a href="#background-art">Background Art</a></li>
 			</ul> <!-- cd-main-nav -->
 		</nav>
 		
@@ -81,7 +86,14 @@
 
 			<div class="cd-box">
 				<h1>Heading, <span></span></h1>
-				<p>Aa - <span></span>. Lorem ipsum dolor sit amet, consectetur adipisicing elit. Omnis voluptate distinctio reprehenderit, autem deleniti ad <a href="#0">voluptatum eaque</a>. Optio ea aperiam nisi distinctio nemo repellat, voluptate fugiat. Quidem neque illum, blanditiis!</p>
+				<p>Aa - <span></span>. Lorem ipsum dolor sit amet, consectetur adipisicing elit. Omnis voluptate distinctio reprehenderit, autem deleniti ad <a href="#0">voluptatum eaque</a>. Optio ea aperiam nisi distinctio nemo repellat, voluptate fugiat. Quidem neque illum, blanditiis!</p><br />
+			</div>
+
+			<div class="code-box-copy">
+			    <button class="code-box-copy__btn" data-clipboard-target="#font-family-css" title="Copy"></button>
+			    <pre>
+			    	<code class="font-family-css" id="font-family-css">id->class { font-family: "Josefin Sans", sans-serif; }</code>
+				</pre>
 			</div>
 		</section>
 
@@ -94,7 +106,33 @@
 				<button class="wonka-btn btn-alert">Alert</button>
 				<button class="wonka-btn btn-outline">Outline</button>
 			</div>
-
+			<div class="code-box-copy">
+			    <button class="code-box-copy__btn" data-clipboard-target="#wonka-btn-code" title="Copy"></button>
+			    <pre>
+			    	<code class="wonka-btn-code" id="wonka-btn-code">&#60;button class=&#34;wonka-btn&#34;&#62;Normal&#60;/button&#62;</code>
+				</pre>
+			</div>
+			<br />
+			<div class="code-box-copy">
+			    <button class="code-box-copy__btn" data-clipboard-target="#btn-success-code" title="Copy"></button>
+			    <pre>
+			    	<code class="btn-success-code" id="btn-success-code">&#60;button class=&#34;wonka-btn btn-success&#34;&#62;Normal&#60;/button&#62;</code>
+				</pre>
+			</div>
+			<br />
+			<div class="code-box-copy">
+			    <button class="code-box-copy__btn" data-clipboard-target="#btn-alert-code" title="Copy"></button>
+			    <pre>
+			    	<code class="btn-alert-code" id="btn-alert-code">&#60;button class=&#34;wonka-btn btn-alert&#34;&#62;Normal&#60;/button&#62;</code>
+				</pre>
+			</div>
+			<br />
+			<div class="code-box-copy">
+			    <button class="code-box-copy__btn" data-clipboard-target="#btn-outline-code" title="Copy"></button>
+			    <pre>
+			    	<code class="btn-outline-code" id="btn-outline-code">&#60;button class=&#34;wonka-btn btn-outline&#34;&#62;Normal&#60;/button&#62;</code>
+				</pre>
+			</div>
 		</section>
 
 		<section id="icons" class="cd-icons">
@@ -150,11 +188,14 @@
 		<section id="background-art" class="cd-background">
 			<h2>Background Art</h2>
 			<ul class="cd-box">
-				<li class="cd-background-1"></li>
+				<li class="cd-background-1"><img src="assets/icons/background-1.png" height="250px"></li>
 			</ul>
 		</section>
 	</main>
 <script src="js/jquery-2.1.1.js"></script>
 <script src="js/main.js"></script> <!-- Resource jQuery -->
+<script src="https://cdn.jsdelivr.net/npm/jquery/dist/jquery.min.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/prismjs/prism.min.js"></script>
+<script src="https://cdn.jsdelivr.net/combine/gh/jablonczay/code-box-copy/clipboard/clipboard.min.js,gh/jablonczay/code-box-copy/code-box-copy/js/code-box-copy.min.js"></script>
 </body>
 </html>
